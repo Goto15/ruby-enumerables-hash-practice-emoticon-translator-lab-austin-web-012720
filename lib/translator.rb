@@ -21,6 +21,7 @@ end
 def get_japanese_emoticon(file_path, us_emo)
   jap_emo = ""
   look_up = load_library(file_path)
+  
   if look_up[:get_emoticon][us_emo]
     jap_emo = look_up[:get_emoticon][us_emo]
   else
@@ -30,6 +31,15 @@ def get_japanese_emoticon(file_path, us_emo)
   return jap_emo
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file_path, jap_emo)
+  us_emo = ""
+  look_up = load_library(file_path)
+  
+  if look_up[:get_meaning][jap_emo]
+    us_emo = look_up[:get_meaning][jap_emo]
+  else 
+    us_emo = "Sorry"
+  end
+  
+  return us_emo
 end
