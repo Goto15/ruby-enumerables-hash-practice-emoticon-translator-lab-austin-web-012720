@@ -8,7 +8,9 @@ def load_library(file_path)
   emoticons = {}
   emoticon_meaning = data.keys
   for each in emoticon_meaning
+    pp each
     emoticons[:get_meaning] = emoticon_meaning
+  end
   
   
   return emoticons
