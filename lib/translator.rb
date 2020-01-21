@@ -38,7 +38,7 @@ def get_english_meaning(file_path, jap_emo)
   if look_up[:get_meaning][jap_emo]
     us_emo = look_up[:get_meaning][jap_emo]
   else 
-    us_emo = "Sorry"
+    us_emo = "Sorry, that emoticon was not found"
   end
   
   return us_emo
