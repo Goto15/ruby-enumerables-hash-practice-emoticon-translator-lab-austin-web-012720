@@ -10,7 +10,7 @@ def load_library(file_path)
   for each in emoticon_meaning
     pp data[each][1]
     emoticons[:get_meaning] = { each => data[each][1] }
-    emoticons[:get_emoticon] = { each => each[0] }
+    emoticons[:get_emoticon] = { each => data[each][0] }
   end
   
   
