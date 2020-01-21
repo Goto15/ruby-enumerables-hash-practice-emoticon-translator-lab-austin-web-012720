@@ -4,7 +4,7 @@ require 'pp'
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
-  pp emoticons
+  emoticons[:get_meaing] = ""
 end
 
 def get_japanese_emoticon
