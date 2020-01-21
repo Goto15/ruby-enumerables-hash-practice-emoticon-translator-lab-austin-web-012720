@@ -3,8 +3,9 @@ require 'yaml'
 require 'pp'
 
 def load_library(file_path)
-  emoticons = YAML.load_file(file_path)
+  data = YAML.load_file(file_path)
   
+  emoticons = {}
   emoticons["get_meaning"] = ""
   emoticons["get_emoticon"] = ""
   
