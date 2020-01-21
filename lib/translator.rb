@@ -6,8 +6,8 @@ def load_library(file_path)
   data = YAML.load_file(file_path)
   
   emoticons = {
-    :get_meaning = {},
-    :get_emoticon = {}
+    :get_meaning => {},
+    :get_emoticon => {}
   }
   
   for each in data.keys
