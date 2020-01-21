@@ -5,11 +5,10 @@ require 'pp'
 def load_library(file_path)
   data = YAML.load_file(file_path)
   
-  pp data
-  
   emoticons = {}
   emoticon_meaning = data.keys
   for each in emoticon_meaning
+    pp each[1]
     emoticons[:get_meaning] = { each => each[1] }
     emoticons[:get_emoticon] = { each => each[0] }
   end
