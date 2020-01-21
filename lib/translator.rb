@@ -13,6 +13,7 @@ def load_library(file_path)
     emoticons[:get_emoticon] = { each => data[each][0] }
   end
   
+  pp emoticons[:get_meaning]["wink"]
   
   return emoticons
 end
