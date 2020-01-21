@@ -21,6 +21,7 @@ end
 def get_japanese_emoticon(file_path, us_emo)
   look_up = load_library(file_path)
   
+  look_up[us_emo]
 end
 
 def get_english_meaning
